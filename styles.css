@@ -162,7 +162,115 @@ header nav a {
 
 
 /*  Resume Section    */
+#resume {
+    background-color: var(--dark-blue);
+    padding: 60px 150px;
+}
 
+.tab-header {
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: space-evenly;
+}
+
+.tab {
+    background-color: var(--greenish-blue);
+    width: 100%;
+    
+}
+
+.tab h4 {
+    color: var(--light-blue);
+    font-size: 23px;
+    margin-block: 25px 20px;
+}
+
+.tab:hover{
+    background-color: var(--blue);
+}
+
+.tab.active {
+    background-color: var(--blue);
+    border-radius: 0px 0px 0px 0px;
+}
+
+.tab.left {
+    border-radius: 10px 0px 0px 0px;
+}
+
+.tab.right {
+    border-radius: 0px 10px 0px 0px;
+}
+
+.active .section-border {
+    width: 25%;
+    height: 3px;
+    background-color: var(--light-blue);
+    margin: 0 auto 0px;
+}
+
+.tab-content {
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--blue);
+}
+
+.type {
+    background-color: var(--dark-blue);
+    height: 50px;
+    padding: 0px 5%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.type h4 {
+    margin-block: 0px;
+    color: var(--light-blue);
+}
+
+.type img {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#resume ul {
+    list-style: none;
+    display: block;
+    padding: 15px 5%;
+    margin-block: 0px;
+}
+
+#education ul li {
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding: 15px 0px;
+}
+
+.tab-icon {
+    width:20px;
+    height:20px;
+    background-color:var(--light-blue);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size:20px;
+    font-weight: bold;
+    padding: 2px;
+    margin: 2px;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+.tab-icon:hover {
+    background-color: rgba(17, 110, 163, 0.623);
+    color: var(--blue)
+}
 
 
 /*  Contact Section    */
