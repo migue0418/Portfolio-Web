@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Miguel Benitez</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Resume</a>
+            <a href="#">Contact</a>
+            <a href="https://www.linkedin.com/in/miguealguacil/">
+                <img src="assets/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/migue0418">
+                <img src="assets/github.png" alt="Github">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div>
+                <h1>Miguel Ángel<br>Benítez Alguacil</h1>
+                <img src="assets/foto-perfil.png">
+                <h3>Computer Science<br>Web Design</h3>
+            </div>
+            <div>
+                <h2>Profile</h2>
+                <p class="profile-text">I am a fourth year student of the Computer Engineering Degree at the University of Granada.</p>
+                <p class="profile-text">I consider myself a sociable person, able to manage time and stressful situations effectively.</p>
+                <h2>Hobbies</h2>
+                <div class="hobbies">
+                    <div>
+                        <img src="assets/camera.png">
+                        <p>Photography</p>
+                    </div>
+                    <div>
+                        <img src="assets/airplane.png">
+                        <p>Travelling</p>
+                    </div>
+                    <div>
+                        <img src="assets/joystick.png">
+                        <p>Videogames</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <div class="container">
+                <div class="tab-header">
+                    <a class="tab left active" onClick="tabShowHide('education', 'tabEducation')" id="tabEducation">
+                        <h4>Education</h4>
+                        <div class="section-border"></div>
+                    </a>
+                    <a class="tab" onClick="tabShowHide('coding', 'tabCoding')" id="tabCoding">
+                        <h4>Coding</h4>
+                        <div class="section-border"></div>
+                    </a>
+                    <a class="tab right" onClick="tabShowHide('software', 'tabSoftware')" id="tabSoftware">
+                        <h4>Software</h4>
+                        <div class="section-border"></div>
+                    </a>
+                </div>
+                <div class="tab-content" id="education">
+                    <div class="type hidden">
+                        <img src="assets/camera.png">
+                        <h4>Education</h4>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="tab-icon">
+                                <a onclick="collapseIcon(this)" data-target="collapseUGR">+</a>
+                            </div>
+                            <div class="info">
+                                <h5>University of Granada</h5>
+                                <div class="collapse" id="collapseUGR">
+                                    <p>Currently cursing the bachelor of Computer Engineering</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tab-icon">
+                                <a onclick="collapseIcon(this)" data-target="collapseAbo">+</a>
+                            </div>
+                            <div class="info">
+                                <h5>Abo Akademi University</h5>
+                                <div class="collapse" id="collapseAbo">
+                                    <p>Erasmus Program in Turku, Finland.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content hidden" id="coding">
+                    <ul>
+                        <li>
+                            <p>
+                                    Organisational competences: Leadership and 
+                                    responsibility. Ability to solve difficulties under pressure. 
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content hidden" id="software">
+                    <ul>
+                        <li>
+                            <p>
+                                    Organisational competences: Leadership and 
+                                    responsibility. Ability to solve difficulties under pressure. 
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            Este es el Contact
+        </section>        
+    </main>
+    <footer>
+        <p>MyPortfolio © 2021</p>
+    </footer>
