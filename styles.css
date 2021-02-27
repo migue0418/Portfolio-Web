@@ -97,7 +97,7 @@ body {
 }
 
 
-/*** HEADER ***/
+/* HEADER */
 header {
     padding: 20px 150px;
     background-color: var(--dark-grey);
@@ -126,7 +126,7 @@ header nav a {
 }
 
 
-/*** MAIN ***/
+/* MAIN */
 
 /*  Home Section    */
 #home {
@@ -276,7 +276,7 @@ header nav a {
 /*  Contact Section    */
 
 
-/*** FOOTER ***/
+/* FOOTER */
 footer {
     padding: 7px 150px;
     background-color: var(--dark-grey);
