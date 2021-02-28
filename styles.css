@@ -16,7 +16,7 @@ h1 {
     font-family: "Montserrat";
     font-weight: bold;
     font-variant: small-caps;
-    color: white;
+    color: var(--greyish-white);
     line-height: 1.2;
     text-align: center;
     text-shadow: 0px 3px 4.5px rgba(0, 0, 0, 0.47);
@@ -70,19 +70,35 @@ a {
     text-decoration: none;
 }
 
+header nav a {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    color: var(--greyish-white);
+    text-shadow: 0px 2px 3.6px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
 .profile-text {
     font-size: 24px;
     font-family: "Montserrat";
-    color: var(--light-grey);
+    color: var(--greyish-white);
     line-height: 1.5;
     text-align: center;
     margin-block: 10px;
 }
 
+.profile-text b {
+    color: var(--light-blue);
+}
+
 .hobbies p {
     font-size: 20px;
     font-family: "Montserrat";
-    color: var(--light-grey);
+    color: var(--greyish-white);
     line-height: 1.2;
     text-align: center;
     text-shadow: 0px 3px 3.6px rgba(0, 0, 0, 0.47);
@@ -90,8 +106,23 @@ a {
 
 .hobbies h3 {
     font-size: 28px;
+    color: var(--light-blue);
 }
-  
+
+.tab h4 {
+    color: var(--dark-blue);
+    font-size: 23px;
+    margin-block: 25px 20px;
+}
+
+.skills-container h3 {
+    font-size: 16px;
+    color: black;
+    text-shadow: 0px 1px 1.2px rgba(0, 0, 0, 0.47);
+    margin-block: auto;
+    text-align: right;
+    padding-right: 10px;
+}
 
 
 /*     CSS   */
@@ -118,18 +149,6 @@ header nav {
     justify-content: space-between;
 }
 
-header nav a {
-    font-family: "Montserrat";
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1;
-    text-align: center;
-    color: var(--greyish-white);
-    text-shadow: 0px 2px 3.6px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-}
-
 
 /*** MAIN ***/
 
@@ -148,6 +167,10 @@ header nav a {
     padding: 0px 20px;
 }
 
+#home .hidden {
+    display: none;
+}
+
 #home img {
     width: 220px;
     padding-top: 10px;
@@ -161,6 +184,7 @@ header nav a {
 
 #home .hobbies div{
     place-items: center;
+    padding: 0px 40px;
 }
 
 #home .hobbies img {
@@ -242,6 +266,7 @@ header nav a {
         to {opacity: 1}
     }
 
+
 /*  Resume Section    */
 #resume {
     background-color: var(--dark-blue);
@@ -255,19 +280,13 @@ header nav a {
 }
 
 .tab {
-    background-color: var(--greenish-blue);
+    background-color: var(--light-blue);
     width: 100%;
     
 }
 
-.tab h4 {
-    color: var(--light-blue);
-    font-size: 23px;
-    margin-block: 25px 20px;
-}
-
 .tab.active, .tab:hover {
-    background-color: var(--blue);
+    background-color: var(--greyish-white);
 }
 
 .tab.left {
@@ -281,13 +300,14 @@ header nav a {
 .active .section-border {
     width: 25%;
     height: 3px;
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
     margin: 0 auto 0px;
 }
 
 .tab-content {
     border-radius: 0px 0px 10px 10px;
-    background-color: var(--blue);
+    background-color: var(--greyish-white);
+    padding: 15px 0px;
 }
 
 .type {
@@ -310,10 +330,6 @@ header nav a {
     padding-right: 10px;
 }
 
-#home .hidden {
-    display: none;
-}
-
 #resume ul {
     list-style: none;
     display: block;
@@ -324,7 +340,6 @@ header nav a {
 #education ul li {
     display: grid;
     grid-template-columns: 40px auto;
-    padding: 15px 0px;
 }
 
 .tab-icon {
@@ -352,6 +367,44 @@ header nav a {
     display: none;
 }
 
+#coding ul{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+#coding ul li{
+    list-style: none;
+    flex-basis: 33.33333%;
+    padding-top: 6px;
+}
+
+.skills-container {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 130px auto;
+    align-content: center;
+}
+
+.skills-back {
+    width: 100%;
+    background-color: var(--light-grey);
+    height: 12px;
+    margin: auto 0px;
+}
+
+.skill {
+    text-align: right;
+    padding: 6px 0px;
+    color: white;
+    margin: auto 0px;
+    background-color: var(--blue);
+    width: 0%;
+}
+
+.skill-bar {
+    width: 40%;
+}
 
 /*  Contact Section    */
 

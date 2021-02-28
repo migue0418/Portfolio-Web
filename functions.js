@@ -1,6 +1,5 @@
 // Home Slideshow
 var slideIndex = 1;
-showSlides(slideIndex);
 
 function moveSlides(n) {
     slideIndex += n;
@@ -55,6 +54,9 @@ function tabShowHide(idContent, idHeader){
 
     document.getElementById(idHeader).classList.add('active');
     document.getElementById(idContent).classList.remove('hidden');
+    if(idHeader == "tabCoding"){
+        activateCoding();
+    }
 }
 
 function collapseIcon(tab) {
@@ -64,4 +66,22 @@ function collapseIcon(tab) {
     else
         tab.innerHTML = "+";
     document.getElementById($dest).classList.toggle('hidden');
+}
+
+// Skill bars
+function activateCoding () {
+    var skills = document.getElementsByClassName("skillbar");
+    var i;
+    for(i=0; i<skills.length; i++){
+        skills[i].style.width = null;
+        setSkill(skills[i]);
+    }
+}
+
+function setSkill(skill) {
+    this.clearTimeout;
+    skill.style.width = skill.getAttribute("data-value");
+    skill.style.transition = "all 2s";
+    skill.style.transitionDelay = "1s";
+
 }
