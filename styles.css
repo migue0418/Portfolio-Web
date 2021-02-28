@@ -1,3 +1,4 @@
+/*  COLORS  */
 :root {
     --dark-blue: rgb(29, 41, 57);
     --blue: #016392;
@@ -86,6 +87,10 @@ a {
     text-align: center;
     text-shadow: 0px 3px 3.6px rgba(0, 0, 0, 0.47);
 }
+
+.hobbies h3 {
+    font-size: 28px;
+}
   
 
 
@@ -97,7 +102,7 @@ body {
 }
 
 
-/* HEADER */
+/*** HEADER ***/
 header {
     padding: 20px 150px;
     background-color: var(--dark-grey);
@@ -126,18 +131,18 @@ header nav a {
 }
 
 
-/* MAIN */
+/*** MAIN ***/
 
 /*  Home Section    */
 #home {
     padding: 70px 150px;
     background-color: var(--dark-blue);
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
     place-items: center;
 }
 
-#home div {
+.grid {
     display: grid;
     place-items: center;
     padding: 0px 20px;
@@ -150,16 +155,92 @@ header nav a {
 }
 
 #home .hobbies {
-    width: 70%;
     display: flex;
-    place-items: center;
     justify-content: space-between;
+}
+
+#home .hobbies div{
+    place-items: center;
 }
 
 #home .hobbies img {
     width: 60px;
+    display: block;
+    margin: auto;
 }
 
+    /* Slideshow */
+    .slideshow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .slides {
+        width: 80%;
+        place-items: center;
+    }
+
+    /* Arrows */
+    .arrow {
+        cursor: pointer;
+        width: auto;
+        padding: 16px;
+        margin: 0px 5px;
+        color: var(--light-blue);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .arrow:hover {
+        color: var(--blue);
+    }
+
+    /* The dots/bullets/indicators */
+    .dots-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100px;
+        margin-top: 5px;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: var(--blue);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+        background-color: var(--light-blue);
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1s;
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
 
 /*  Resume Section    */
 #resume {
@@ -185,13 +266,8 @@ header nav a {
     margin-block: 25px 20px;
 }
 
-.tab:hover{
+.tab.active, .tab:hover {
     background-color: var(--blue);
-}
-
-.tab.active {
-    background-color: var(--blue);
-    border-radius: 0px 0px 0px 0px;
 }
 
 .tab.left {
@@ -234,7 +310,7 @@ header nav a {
     padding-right: 10px;
 }
 
-.hidden {
+#home .hidden {
     display: none;
 }
 
@@ -272,11 +348,15 @@ header nav a {
     color: var(--blue)
 }
 
+#resume .hidden {
+    display: none;
+}
+
 
 /*  Contact Section    */
 
 
-/* FOOTER */
+/*** FOOTER ***/
 footer {
     padding: 7px 150px;
     background-color: var(--dark-grey);
