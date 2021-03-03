@@ -72,7 +72,7 @@ a {
 
 header nav a {
     font-family: "Montserrat";
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1;
@@ -137,7 +137,7 @@ body {
 header {
     padding: 20px 150px;
     background-color: var(--dark-grey);
-    height: 40px;
+    height: 30px;
     margin: 0px;
 }
 
@@ -149,16 +149,27 @@ header nav {
     justify-content: space-between;
 }
 
+header img {
+    width: 28px;
+}
+
 
 /*** MAIN ***/
 
 /*  Home Section    */
 #home {
-    padding: 70px 150px;
+    padding: 40px 150px;
     background-color: var(--dark-blue);
-    display: grid;
-    grid-template-columns: 40% 60%;
+    display: flex;
     place-items: center;
+}
+
+#home .col-left {
+    width: 40%;
+}
+
+#home .col-right {
+    width: 60%;
 }
 
 .grid {
@@ -376,7 +387,6 @@ header nav {
 #coding ul li{
     list-style: none;
     flex-basis: 33.33333%;
-    padding-top: 6px;
 }
 
 .skills-container {
@@ -420,4 +430,63 @@ footer p {
     font-family: "Montserrat";
     font-size: 15px;
     color: var(--light-grey);
+}
+
+/***** RESPONSIVE *****/
+/* Small laptop */
+@media only screen and (max-width: 1024px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 20px 10%;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    #home {
+        padding: 0px 10%;
+        display: block;
+    }
+
+    #home .col-left, #home .col-right {
+        width: 100%;
+    }
+
+    .grid {
+        padding: 25px 0px;
+    }
+
+    .separation {
+        width: 25%;
+        height: 3px;
+        background-color: var(--light-blue);
+        margin: 0 auto 0px;
+    }
+
+    #home .hobbies div{
+        padding: 0px;
+    }
+
+    #resume {
+        padding: 60px 5%;
+    }
+}
+
+/* Menu change */
+@media only screen and (max-width: 560px) {
+    
+}
+
+/* Mobile */
+@media only screen and (max-width: 425px) {
+    body {
+      background-color: lightblue;
+    }
 }
