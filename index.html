@@ -13,22 +13,36 @@
 <body>
     <header>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#resume">Resume</a>
-            <a href="#">Contact</a>
-            <a href="https://www.linkedin.com/in/miguealguacil/">
-                <img src="assets/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/migue0418">
-                <img src="assets/github.png" alt="Github">
-            </a>
+            <div class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#resume">Resume</a>
+                <a href="#">Contact</a>
+                <a href="https://www.linkedin.com/in/miguealguacil/">
+                    <img src="assets/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/migue0418">
+                    <img src="assets/github.png" alt="Github">
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" href="#" onclick="showDropdownmenu()">
+                    <img src="assets/menu.png" alt="Dropdown">
+                </button>
+                <div class="dropdown-content" id="dropdown_content">
+                    <a href="#home">Home</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#">Contact</a>
+                    <a href="https://github.com/migue0418">Github</a>
+                    <a href="https://www.linkedin.com/in/miguealguacil/">LinkedIn</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section id="home">
             <div class="grid col-left">
                 <h1>Miguel Ángel<br>Benítez Alguacil</h1>
-                <img src="assets/foto-perfil.png">
+                <img src="assets/foto-perfil.png" alt="Profile Pic">
                 <h3>Computer Science<br>Web Design</h3>
             </div>
             <div class="separation"></div>
@@ -67,15 +81,15 @@
                         <h2>Hobbies</h2>
                         <div class="hobbies">
                             <div>
-                                <img src="assets/camera.png">
+                                <img src="assets/camera.png" alt="Photography">
                                 <p>Photography</p>
                             </div>
                             <div>
-                                <img src="assets/airplane.png">
+                                <img src="assets/airplane.png" alt="Travel">
                                 <p>Travelling</p>
                             </div>
                             <div>
-                                <img src="assets/joystick.png">
+                                <img src="assets/joystick.png" alt="Videogames">
                                 <p>Videogames</p>
                             </div>
                         </div>

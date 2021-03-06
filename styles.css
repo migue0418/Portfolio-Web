@@ -82,6 +82,11 @@ header nav a {
     text-decoration: none;
 }
 
+.dropdown-content a {
+    text-transform: none;
+    padding: 10px;
+}
+
 .profile-text {
     font-size: 24px;
     font-family: "Montserrat";
@@ -145,6 +150,12 @@ header nav {
     width: 75%;
     float: right;
     display: flex;
+    justify-content: right;
+}
+
+header nav .nav-menu {
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -153,6 +164,31 @@ header img {
     width: 28px;
 }
 
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-btn {
+    cursor: pointer; 
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    position: absolute; 
+    right: 0;
+    background-color: rgb(39,39,39,0.7);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 10px 5px;
+    display: none;
+    justify-items: center;
+    min-width: 160px;
+    z-index: 1;
+}
 
 /*** MAIN ***/
 
@@ -481,7 +517,17 @@ footer p {
 
 /* Menu change */
 @media only screen and (max-width: 560px) {
-    
+    header nav {
+        width: auto;
+    }
+
+    header nav .nav-menu {
+        display: none;
+    }
+
+    header nav .dropdown {
+        display: inline-block;
+    }
 }
 
 /* Mobile */

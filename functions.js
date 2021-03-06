@@ -85,3 +85,8 @@ function setSkill(skill) {
     skill.style.transitionDelay = "1s";
 
 }
+
+// Dropdown Menu
+function showDropdownmenu() {
+    document.getElementById("dropdown_content").classList.toggle('grid');
+}
