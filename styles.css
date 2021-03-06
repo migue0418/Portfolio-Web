@@ -11,6 +11,17 @@
 }
 
 /*  TIPOGRAPHIES  */
+/*
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat.eot');
+    src: url('fonts/Montserrat.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Montserrat.woff') format('woff'),
+         url('fonts/Montserrat.ttf') format('truetype'),
+         url('fonts/Montserrat.svg#adlerRegular') format('svg');
+}
+*/
+
 h1 {
     font-size: 45px;
     font-family: "Montserrat";
@@ -471,9 +482,7 @@ footer p {
 /***** RESPONSIVE *****/
 /* Small laptop */
 @media only screen and (max-width: 1024px) {
-    body {
-      background-color: lightblue;
-    }
+    
 }
 
 /* Tablet */
@@ -493,6 +502,11 @@ footer p {
 
     #home .col-left, #home .col-right {
         width: 100%;
+    }
+
+    #home .hobbies { 
+        flex-wrap: wrap; 
+        justify-content: space-around;
     }
 
     .grid {
@@ -532,7 +546,32 @@ footer p {
 
 /* Mobile */
 @media only screen and (max-width: 425px) {
-    body {
-      background-color: lightblue;
+    h1 { font-size: 30px; }
+
+    h2 { font-size: 23px; }
+
+    h3 { font-size: 25px; }
+
+    .hobbies h3 { font-size: 22px; }
+
+    .hobbies p { font-size: 18px; }
+
+    .profile-text { font-size: 18px; }
+
+    #home { padding: 0px 5%; }
+
+    #home img { width: 200px; }
+
+    #home .hobbies { 
+        flex-wrap: wrap; 
+        justify-content: space-around;
     }
+
+    #home .hobbies img { width: 40px; }
+
+    #home .hobbies p { font-size: 18px; }
+
+    .arrow { display: none; }
+
+    .slides { width: 100%; }
 }
