@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="functions.js"></script>
 </head>
-<body>
+<body onload="activateCoding()">
     <header>
         <nav>
             <div class="nav-menu">
@@ -107,7 +107,7 @@
         </section>
 
         <section id="resume">
-            <div class="container">
+            <div class="container tab-view">
                 <div class="tab-header">
                     <a class="tab left active" onClick="tabShowHide('education', 'tabEducation')" id="tabEducation">
                         <h4>Education</h4>
@@ -213,6 +213,137 @@
                     </ul>
                 </div>
                 <div class="tab-content hidden" id="software">
+                    <ul>
+                        <li>
+                            <p><b>Adobe Photoshop</b> (Web Design and Image Processing)</p>
+                        </li>
+                        <li>
+                            <p><b>Agile Methodologies</b> (Use of Scrum methodology and Kanban)</p>
+                        </li>
+                        <li>
+                            <p><b>Git</b> (Version Control)</p>
+                        </li>
+                        <li>
+                            <p><b>Microsoft Visual Basic</b> ("Data Analytics" course)</p>
+                        </li>
+                        <li>
+                            <p><b>Unity</b> (Creation of "Subject 14", a videogame project)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container block-view">
+                <div class="tab-header">
+                    <a class="tab" id="tabEducation">
+                        <h4>Education</h4>
+                        <div class="section-border"></div>
+                    </a>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li>
+                            <div class="tab-icon">
+                                <a onclick="collapseIcon(this)" data-target="collapseUGR2">+</a>
+                            </div>
+                            <div class="info">
+                                <h5>University of Granada</h5>
+                                <div class="collapse" id="collapseUGR2">
+                                    <p>Currently cursing the bachelor of Computer Engineering</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tab-icon">
+                                <a onclick="collapseIcon(this)" data-target="collapseAbo2">+</a>
+                            </div>
+                            <div class="info">
+                                <h5>Abo Akademi University</h5>
+                                <div class="collapse" id="collapseAbo2">
+                                    <p>Erasmus Program in Turku, Finland.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container mobile-view">
+                    <div class="tab-header">
+                        <a class="tab" id="tabCoding">
+                            <h4>Coding</h4>
+                            <div class="section-border"></div>
+                        </a>
+                    </div>
+                <div class="tab-content" id="coding">
+                    <ul>
+                        <li><div class="skills-container">
+                            <h3>C++ / C#</h3>
+                            <div class="skills-back">
+                                <div class="skill skillbar" data-value="85%"></div>
+                            </div>
+                        </div></li>
+                        <li><div class="skills-container">
+                                <h3>HTML</h3>
+                                <div class="skills-back">
+                                    <div class="skill skillbar" data-value="65%"></div>
+                                </div>
+                            </div></li>
+                        <li><div class="skills-container">
+                                <h3>CSS</h3>
+                                <div class="skills-back">
+                                    <div class="skill skillbar" data-value="55%"></div>
+                                </div>
+                            </div></li>
+                            <li><div class="skills-container">
+                                <h3>Java</h3>
+                                <div class="skills-back">
+                                    <div class="skill skillbar" data-value="50%"></div>
+                                </div>
+                            </div></li>
+                            <li><div class="skills-container">
+                                    <h3>Python</h3>
+                                    <div class="skills-back">
+                                        <div class="skill skillbar" data-value="45%"></div>
+                                    </div>
+                                </div></li>
+                        <li><div class="skills-container">
+                            <h3>JavaScript</h3>
+                            <div class="skills-back">
+                                <div class="skill skillbar" data-value="40%"></div>
+                            </div>
+                        </div></li>
+                        <li><div class="skills-container">
+                                <h3>SQL</h3>
+                                <div class="skills-back">
+                                    <div class="skill skillbar" data-value="40%"></div>
+                                </div>
+                            </div></li>
+                        <li><div class="skills-container">
+                                <h3>PHP</h3>
+                                <div class="skills-back">
+                                    <div class="skill skillbar" data-value="30%"></div>
+                                </div>
+                            </div></li>
+                        <li><div class="skills-container">
+                            <h3>NoSQL</h3>
+                            <div class="skills-back">
+                                <div class="skill skillbar" data-value="25%"></div>
+                            </div>
+                        </div></li>
+                        <li><div class="skills-container">
+                                <h3>Ruby</h3>
+                                <div class="skills-back">
+                                    <div class="skill skillbar" data-value="20%"></div>
+                                </div>
+                            </div></li>
+                    </ul>
+                </div>
+                <div class="container mobile-view">
+                    <div class="tab-header">
+                        <a class="tab" id="tabSoftware">
+                            <h4>Software</h4>
+                            <div class="section-border"></div>
+                        </a>
+                    </div>
+                <div class="tab-content" id="software">
                     <ul>
                         <li>
                             <p><b>Adobe Photoshop</b> (Web Design and Image Processing)</p>

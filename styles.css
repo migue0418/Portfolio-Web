@@ -416,6 +416,14 @@ header img {
     grid-template-columns: 40px auto;
 }
 
+.tab-view {
+    display: block;
+}
+
+.block-view {
+    display: none;
+}
+
 .tab-icon {
     width:20px;
     height:20px;
@@ -557,6 +565,26 @@ footer p {
 
     header nav .dropdown {
         display: inline-block;
+    }
+
+    #resume {
+        padding: 10px;
+    }
+
+    .tab-view {
+        display: none;
+    }
+
+    .block-view {
+        display: block;
+    }
+
+    .tab {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .tab-content {
+        margin-bottom: 30px;
     }
 }
 
